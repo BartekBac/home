@@ -1,0 +1,10 @@
+SELECT nrk, nrs, max(sr)
+FROM(
+SELECT s.NR_STUD as nrs,s.NR_KIER as nrk, avg(o.OCENA) as sr
+FROM studenci s, oceny o, przedmioty p
+WHERE s.NR_STUD=o.NR_STUD and 
+p.NR_PRZEDM=o.NR_PRZEDM and
+p.NAZWA_PRZEDM='BAZY DANYCH'
+GROUP BY s.NR_STUD, s.NR_KIER) as t, studenci ss
+WHERE nrs as 
+GROUP BY nrk
