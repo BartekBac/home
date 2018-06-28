@@ -1,0 +1,34 @@
+Monitor Monitor_widelców
+Widelec : array(0..4) of Integer range 0..2 := (others =>2);
+Mo¿na_jeœæ: array(0..4) of Condition;
+procedure WeŸ_widelce(i: Integer) is
+begin
+if Widelec(i) /= 2 then
+Wait(Mo¿na_jeœæ(i));
+end if;
+Widelec((i+1) mod 5) := Widelce((i+1) mod 5) - 1;
+Widelec((i-1) mod 5) := Widelce((i-1) mod 5) - 1;
+end WeŸ_widelce;
+procedure Od³o¿_widelce(i:Integer) is
+begin
+Widelec((i+1) mod 5) := Widelce((i+1) mod 5) + 1;
+Widelec((i-1) mod 5) := Widelce((i-1) mod 5) + 1;
+if Widelec((i+1)mod5) = 2 then
+Signal(Mo¿na_jeœæ((i+1) mod 5));
+end if;
+if Widelec((i-1)mod5) = 2 then
+Signal(Mo¿na_jeœæ((i-1) mod 5));
+end if;
+end Od³o¿_widelce;
+end Monitor_widelców;
+task Filozof(1..5) is
+end;
+task body Filozof is
+begin
+loop
+Myœl();
+WeŸ_widelce(Filozof’index);
+Jedz();
+Od³o¿_widelce(Filozof’index);
+end loop;
+end Filozof;
