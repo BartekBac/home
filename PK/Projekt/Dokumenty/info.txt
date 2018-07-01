@@ -1,0 +1,35 @@
+Dzien dobry,
+
+poniewa¿ niektórzy z Panstwa ju¿ zaprezentowali skoñczone projekty, poni¿ej zalaczam opis zawartoœci sprawozdania.
+
+Sprawozdnanie powinno zawieraæ punkty:
+
+0- Strona tytu³owa (autor, tytu³, data, prowadz¹cy)
+
+1- Temat
+
+2- Analiza tematu (doprecyzowanie tematu, uzasadnienie wstêpnego wyboru klas, algorytmów, bibliotek, itp.)
+
+3- Specyfikacja zewnêtrzna (instrukcja dla u¿ytkownika, zrzuty ekranów roboczych - przyk³ady dzia³ania)
+
+4- Specyfikacja wewnêtrzna
+
+4a- istotne klasy - znaczenie obiektu klasy, powi¹zania z innymi klasami, istotne pola i metody
+
+4b- diagram hierarchii klas (dziedziczenie oznaczamy strza³k¹ prowadz¹c¹ od klasy potomnej do bazowej)
+
+4c- istotne struktury danych (w tym wszystkie zmienne globalne) i algorytmy
+
+4d- wykorzystane techniki obiektowe (które i w jaki sposób)
+
+4e- ogólny schemat dzia³ania programu
+
+5-Testowanie i uruchamianie (obowi¹zkowo, oczywiœcie bez obni¿ania oceny za wykrycie i usuniêcie du¿ej liczby b³êdów)
+
+6- Uwagi i wnioski (dowolne - do tematu, programu, prowadz¹cego, zajêæ itp., punkt nieobowi¹zkowy)
+
+Sprawozdanie w formacie PDF. W sprawozdaniu omawiamy istotne elementy projektu, po szczegó³y oceniaj¹cy mo¿e siêgn¹æ do (skomentowanych) Ÿróde³. Sprawozdanie nale¿y dostarczyæ wg zaleceñ porowadzacego (moje sekcje: proszê przys³aæ mi na mail, w mailu nale¿y podaæ adres gdzie zosta³y wgrane Ÿród³a i kod wykonywalny projektu, oraz w jaki sposób nale¿y projekt kompilowaæ).
+
+ 
+
+Roman Starosolski

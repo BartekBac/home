@@ -1,0 +1,55 @@
+--GNAT 4.9.3
+
+with Ada.Text_IO; use Ada.Text_IO;
+with Ada.Real_Time;
+
+procedure Ucztujacy_Filozofowie is
+
+procedure Mysl(i: Natural) is
+begin
+    Put_Line("Filozof "&Natural'Image(i)&" mysli");
+end Mysl;
+
+procedure Jedz(i: Natural) is
+begin
+    Put_Line("Filozof "&Natural'Image(i)&" je");
+end Jedz;
+
+procedure P(i: in out Natural) is
+begin
+    while i <= 0 loop
+        delay 10.0;
+    end loop;
+    i:=i-1;
+end P;
+    
+procedure V(i: in out Natural) is
+begin
+    i:=i+1;
+end V;
+
+Widelec: array(0..4) of natural := (others =>1);
+Kelner: Natural := 1;
+task type Filozof (index: Integer);
+task body Filozof is
+begin
+    loop
+		Mysl(index);
+		P(Kelner);
+        P(Widelec(index));
+        P(Widelec((index+1) mod 5));
+        V(Kelner);
+        Jedz(index);
+        V(Widelec(index));
+        V(Widelec((index+1) mod 5));
+    end loop;
+end Filozof;
+
+    F0: Filozof (0);
+    F1: Filozof (1);
+    F2: Filozof (2);
+    F3: Filozof (3);
+    F4: Filozof (4);
+begin
+    Put_Line("start");
+end Ucztujacy_Filozofowie;
