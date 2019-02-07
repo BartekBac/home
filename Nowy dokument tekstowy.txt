@@ -1,0 +1,7 @@
+Zestaw potrzebnych plików:
+? Brokera:
+o server.key – klucz certyfikatu brokera, potrzeby do utworzenia pliku server.csr
+o server.csr – plik ¿¹dania certyfikatu, potrzeby do utworzenia pliku server.crt
+o server.crt – w³aœciwy plik certyfikuj¹cy brokera
+? Klienta:
+o ca.key – klucz certyfikatu klienta, potrzebny do
