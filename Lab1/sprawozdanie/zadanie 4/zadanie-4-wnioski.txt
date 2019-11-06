@@ -1,0 +1,6 @@
+Przed wykonaniem zadaniam przygotowałem zbiór zawierający teksty piosenek wszystkich artystów.
+Następinie, osobno dla każdego artysty stosując bloczek "Filter examples" i wybierając tylko przykłądy oznaczone labelem dla konkretnego wykonawcy wyznaczyłem jego outlierów bloczkiem "Detect Outlier (LOF)", jednkaże uprzednio normalizując dane blokiem "Normalize" ponieważ przy wyznaczaniu outlierów wykorzystałem obliczanie odległości euklidesowej. Następnie uzyskany result set wyfiltrowałem po wartości "outlier" malejąco i odczytałem pierwsze rekordy.
+Pierwsze 3 podejrzane pliki dla:
+Akcent: 73, 47, 72, (151 pozycja 5ta)
+Boys: 94, 130, 120
+Shazza: 8, 5, 67 (7 pozycja 4ta, 28 pozycja 9ta)
